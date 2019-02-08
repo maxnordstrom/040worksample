@@ -105,6 +105,15 @@ h1, h2, h3, h4, h5, p {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
+.select-course {
+  display: flex;
+}
+
+.select-name label,
+.select-date label {
+  display: block;
+}
+
 
 
 

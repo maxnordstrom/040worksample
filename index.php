@@ -24,7 +24,30 @@
   <![endif]-->
 
   <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+
+  <section class="course-section container">
+    <h2>Course</h2>
+    <form>
+      <div class="select-course">
+        <div class="select-name col-md-6">
+          <label for="select-name">Name*</label>
+          <select class="form-control" id="select-name">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+        <div class="select-date col-md-6">
+          <label for="select-date">Date</label>
+          <select class="form-control" id="select-date">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+          </select>
+        </div>
+      </div>
+    </form>
+  </section>
 
 
 
