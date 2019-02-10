@@ -25,6 +25,8 @@
 
   <!-- Add your site or application content here -->
 
+
+<!-- Course section -->
   <section class="course-section">
     <div class="col-md-10 mx-auto">
       <h2>Course</h2>
@@ -47,13 +49,14 @@
             </select>
           </div>
         </div>
-      </form>
     </div>
   </section>
+
+  <!-- Company section -->
   <section class="company-section">
     <div class="col-md-10 mx-auto">
       <h2>Company</h2>
-      <form class="d-flex flex-wrap">
+      <div class="d-flex flex-wrap">
         <div class="col-md-12">
           <label for="company-name">Name*</label>
           <input type="text" class="form-control" id="company-name">
@@ -66,14 +69,16 @@
           <label for="company-email">E-mail*</label>
           <input type="email" class="form-control" id="company-email">
         </div>
-      </form>
+      </div>
     </div>
   </section>
+
+  <!-- Participant section -->
   <section class="participant-section">
     <div class="col-md-10 mx-auto">
       <h2>Participants</h2>
       <h4>Participant #1</h4>
-      <form class="d-flex flex-wrap">
+      <div class="d-flex flex-wrap">
         <div class="col-md-12">
           <label for="company-name">Name*</label>
           <input type="text" class="form-control" id="company-name">
@@ -89,15 +94,18 @@
         <div class="btn-add-participant">
           <button type="submit" class="btn btn-primary mt-3">Add a participant</button>
         </div>
-      </form>
+      </div>
     </div>
   </section>
+
+  <!-- Submit section -->
   <section>
     <div class="col-md-10 mx-auto">
       <div class="btn-submit-application">
         <button type="submit" class="btn btn-primary col-md-12">Submit application</button>
       </div>
     </div>
+  </form>
   </section>
 
 
