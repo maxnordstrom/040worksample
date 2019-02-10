@@ -30,11 +30,11 @@
   <section class="course-section">
     <div class="col-md-10 mx-auto">
       <h2>Course</h2>
-      <form>
+      <form action="db_script.php" method="post">
         <div class="select-course">
           <div class="select-name col-md-6">
             <label for="select-name">Name*</label>
-            <select class="custom-select" id="select-name">
+            <select class="custom-select" id="select-name" name="course_name">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -42,7 +42,7 @@
           </div>
           <div class="select-date col-md-6">
             <label for="select-date">Date</label>
-            <select class="form-control" id="select-date">
+            <select class="form-control" id="select-date" name="course_date">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -59,15 +59,15 @@
       <div class="d-flex flex-wrap">
         <div class="col-md-12">
           <label for="company-name">Name*</label>
-          <input type="text" class="form-control" id="company-name">
+          <input type="text" class="form-control" id="company-name" name="company_name">
         </div>
         <div class="col-md-4">
           <label for="company-phone">Phone*</label>
-          <input type="number" class="form-control" id="company-phone">
+          <input type="number" class="form-control" id="company-phone" name="company_phone">
         </div>
         <div class="col-md-8">
           <label for="company-email">E-mail*</label>
-          <input type="email" class="form-control" id="company-email">
+          <input type="email" class="form-control" id="company-email" name="company_email">
         </div>
       </div>
     </div>
@@ -81,15 +81,15 @@
       <div class="d-flex flex-wrap">
         <div class="col-md-12">
           <label for="company-name">Name*</label>
-          <input type="text" class="form-control" id="company-name">
+          <input type="text" class="form-control" id="company-name" name="company_name">
         </div>
         <div class="col-md-4">
           <label for="company-phone">Phone*</label>
-          <input type="number" class="form-control" id="company-phone">
+          <input type="number" class="form-control" id="company-phone" name="company_phone">
         </div>
         <div class="col-md-8">
           <label for="company-email">E-mail*</label>
-          <input type="email" class="form-control" id="company-email">
+          <input type="email" class="form-control" id="company-email" name="company_email">
         </div>
         <div class="btn-add-participant">
           <button type="submit" class="btn btn-primary mt-3">Add a participant</button>
