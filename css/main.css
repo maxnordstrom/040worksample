@@ -84,7 +84,7 @@ h1, h2, h3, h4, h5, p {
   font-family: 'Source Sans Pro', sans-serif; }
 
 h2, h4 {
-  font-weight: bold;
+  font-weight: 900;
   padding-left: 0.9375rem; }
 
 label {
@@ -109,7 +109,10 @@ section {
 
 .btn-primary {
   background-color: #563b3f !important;
-  border-color: #563b3f !important; }
+  border-color: #563b3f !important;
+  font-weight: bold !important;
+  font-size: 0.7rem;
+  padding: 0.5rem 1rem; }
   .btn-primary:hover {
     background-color: #452f33 !important;
     border-color: #452f33 !important; }
@@ -118,7 +121,7 @@ section {
   padding-left: 0.9375rem; }
 
 .btn-submit-application {
-  padding: 0 0.9375rem 0 0.9375rem; }
+  margin: 0 0.9375rem 0 0.9375rem; }
 
 /* ==========================================================================
    Helper classes
