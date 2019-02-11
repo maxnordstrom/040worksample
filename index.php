@@ -84,7 +84,7 @@
           <input type="email" class="form-control" id="company-email" name="company_email">
         </div>
         <div class="btn-add-participant">
-          <button type="submit" class="btn btn-primary mt-3">Add a participant</button>
+          <button type="button" class="btn btn-primary mt-3 add-participant">Add a participant</button>
         </div>
       </div>
     </div>
