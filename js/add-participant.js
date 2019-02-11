@@ -39,12 +39,12 @@ jQuery(document).ready(function() {
 
     $('.participant-header').each(function(){
       participantNumber++;
-      let newID='participant-number-'+participantNumber;
-      $(this).attr('id',newID);
+      let newId='participant-number-'+participantNumber;
+      $(this).attr('id', newId);
       $(this).val(participantNumber);
     });
 
-    document.getElementById("participant-number-"+participantNumber).innerHTML = "Participant # " + participantNumber;
+    document.getElementById("participant-number-"+participantNumber).innerHTML = "Participant #" + participantNumber;
 
 
   })
