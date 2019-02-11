@@ -34,15 +34,11 @@
         <div class="select-course">
           <div class="select-name col-md-6">
             <label for="select-name">Name*</label>
-            <select class="custom-select" id="course-dropdown" name="course_name"></select>
+            <select class="form-control" id="course-dropdown" name="course_name"></select>
           </div>
           <div class="select-date col-md-6">
             <label for="select-date">Date</label>
-            <select class="form-control" id="date-dropdown" name="course_date">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-            </select>
+            <select class="form-control" id="date-dropdown" name="course_date"></select>
           </div>
         </div>
     </div>
