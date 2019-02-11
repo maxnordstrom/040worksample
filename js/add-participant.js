@@ -1,7 +1,5 @@
 jQuery(document).ready(function() {
 
-  let participantNumber = 1;
-
   $("#add-participant").click(function() {
 
     let newParticipant = $(
@@ -24,12 +22,6 @@ jQuery(document).ready(function() {
 
     $('#append-here').append(newParticipant);
 
-    // let header = $('.participant-header');
-    // let newID='participant-number-'+participantNumber;
-    //   $(header).attr('id',newID);
-    //   $(header).val(participantNumber);
-    // console.log(header);
-
 
     // let numberOfHeaders = $('.participant-header').length;
     // numberOfHeaders++;
@@ -42,6 +34,8 @@ jQuery(document).ready(function() {
     //   // console.log(newId);
     // }
     // addNewId();
+
+    let participantNumber = 1;
 
     $('.participant-header').each(function(){
       participantNumber++;
