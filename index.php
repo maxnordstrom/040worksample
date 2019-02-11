@@ -30,19 +30,15 @@
   <section class="course-section">
     <div class="col-md-10 mx-auto">
       <h2>Course</h2>
-      <form action="db_script.php" method="post">
+      <form action="form-script.php" method="post">
         <div class="select-course">
           <div class="select-name col-md-6">
             <label for="select-name">Name*</label>
-            <select class="custom-select" id="select-name" name="course_name">
-              <option>1</option>
-              <option>2</option>
-              <option>3</option>
-            </select>
+            <select class="custom-select" id="course-dropdown" name="course_name"></select>
           </div>
           <div class="select-date col-md-6">
             <label for="select-date">Date</label>
-            <select class="form-control" id="select-date" name="course_date">
+            <select class="form-control" id="date-dropdown" name="course_date">
               <option>1</option>
               <option>2</option>
               <option>3</option>
@@ -116,6 +112,7 @@
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
+  <script src="js/dropdown.js"></script>
 
 </body>
 
