@@ -67,7 +67,7 @@
 
   <!-- Participant section -->
   <section class="participant-section">
-    <div class="col-md-10 mx-auto">
+    <div class="col-md-10 mx-auto" id="append-here">
       <h2>Participants</h2>
       <h4>Participant #1</h4>
       <div class="d-flex flex-wrap">
@@ -83,10 +83,13 @@
           <label for="company-email">E-mail*</label>
           <input type="email" class="form-control" id="company-email" name="company_email">
         </div>
-        <div class="btn-add-participant">
-          <button type="button" class="btn btn-primary mt-3 add-participant">Add a participant</button>
-        </div>
+        <!-- <div class="btn-add-participant">
+          <button type="button" class="btn btn-primary mt-3 add-participant" id="add-participant">Add a participant</button>
+        </div> -->
       </div>
+    </div>
+    <div class="btn-add-participant col-md-10 mx-auto">
+      <button type="button" class="btn btn-primary mt-3 ml-3 add-participant" id="add-participant">Add a participant</button>
     </div>
   </section>
 
@@ -109,6 +112,7 @@
   <script src="js/main.js"></script>
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/dropdown.js"></script>
+  <script src="js/add-participant.js"></script>
 
 </body>
 
