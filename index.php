@@ -16,6 +16,8 @@
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
+
+  <?php include('form-script.php'); ?>
 </head>
 
 <body>
@@ -30,7 +32,7 @@
   <section class="course-section">
     <div class="col-md-10 mx-auto">
       <h2>Course</h2>
-      <form action="form-script.php" method="post">
+      <form method="post" action="form-script.php">
         <div class="select-course">
           <div class="select-name col-md-6">
             <label for="select-name">Name*</label>
@@ -72,16 +74,16 @@
       <h4 class="participant-header" id="participant-number-1">Participant #1</h4>
       <div class="d-flex flex-wrap">
         <div class="col-md-12">
-          <label for="company-name">Name*</label>
-          <input type="text" class="form-control" id="company-name" name="company_name">
+          <label for="participant-name">Name*</label>
+          <input type="text" class="form-control" id="participant-name" name="participant_name">
         </div>
         <div class="col-md-4">
-          <label for="company-phone">Phone*</label>
-          <input type="number" class="form-control" id="company-phone" name="company_phone">
+          <label for="participant-phone">Phone*</label>
+          <input type="number" class="form-control" id="participant-phone" name="participant_phone">
         </div>
         <div class="col-md-8">
-          <label for="company-email">E-mail*</label>
-          <input type="email" class="form-control" id="company-email" name="company_email">
+          <label for="participant-email">E-mail*</label>
+          <input type="email" class="form-control" id="participant-email" name="participant_email">
         </div>
         <!-- <div class="btn-add-participant">
           <button type="button" class="btn btn-primary mt-3 add-participant" id="add-participant">Add a participant</button>
