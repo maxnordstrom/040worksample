@@ -6,16 +6,16 @@ jQuery(document).ready(function() {
     `<h4 class="pt-3 participant-header"></h4>
       <div class="d-flex flex-wrap">
         <div class="col-md-12">
-          <label for="company-name">Name*</label>
-          <input type="text" class="form-control" id="company-name" name="company_name">
+          <label for="participant-name">Name*</label>
+          <input type="text" class="form-control new-participant-name" id="participant-name" name="participant_name">
         </div>
         <div class="col-md-4">
-          <label for="company-phone">Phone*</label>
-          <input type="number" class="form-control" id="company-phone" name="company_phone">
+          <label for="participant-phone">Phone*</label>
+          <input type="number" class="form-control new-participant-phone" id="participant-phone" name="participant_phone">
         </div>
         <div class="col-md-8">
-          <label for="company-email">E-mail*</label>
-          <input type="email" class="form-control" id="company-email" name="company_email">
+          <label for="participant-email">E-mail*</label>
+          <input type="email" class="form-control new-participant-email" id="participant-email" name="participant_email">
         </div>
       </div>`
     );
@@ -34,6 +34,39 @@ jQuery(document).ready(function() {
     });
 
     document.getElementById("participant-number-"+participantNumber).innerHTML = "Participant #" + participantNumber;
+
+
+    // Set unique ID and name
+    $('.new-participant-name').each(function(){
+      let newId='participant-name-'+participantNumber;
+      let newParticipantName = 'participant_name_'+participantNumber;
+      $(this).attr('id', newId);
+      $(this).attr('name', newParticipantName);
+    });
+
+    document.getElementById("participant-name-"+participantNumber);
+
+
+    // Set unique ID and phone
+    $('.new-participant-phone').each(function(){
+      let newId='participant-phone-'+participantNumber;
+      let newParticipantName = 'participant_phone_'+participantNumber;
+      $(this).attr('id', newId);
+      $(this).attr('name', newParticipantName);
+    });
+
+    document.getElementById("participant-phone-"+participantNumber);
+
+
+    // Set unique ID and email
+    $('.new-participant-email').each(function(){
+      let newId='participant-email-'+participantNumber;
+      let newParticipantName = 'participant_email_'+participantNumber;
+      $(this).attr('id', newId);
+      $(this).attr('name', newParticipantName);
+    });
+
+    document.getElementById("participant-email-"+participantNumber);
 
   })
 
