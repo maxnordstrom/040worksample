@@ -4,7 +4,7 @@
 include('db.php');
 
 // Get user input
-$courseName =       $_POST['course_name'] ?? '';
+$courseID =         $_POST['course_id'] ?? '';
 $courseDate =       $_POST['course_date'] ?? '';
 $companyName =      $_POST['company_name'] ?? '';
 $companyPhone =     $_POST['company_phone'] ?? '';
@@ -13,9 +13,12 @@ $participantName =  $_POST['participant_name'] ?? '';
 $participantPhone = $_POST['participant_phone'] ?? '';
 $participantEmail = $_POST['participant_email'] ?? '';
 
-$sql = 'INSERT INTO course1(course_date, company_name, company_phone, company_email, participant_name, participant_phone, participant_email) VALUES(:course_date, :company_name, :company_phone, :company_email, :participant_name, :participant_phone, :participant_email)';
+print_r($courseID);
+
+$sql = 'INSERT INTO course1(course_id, course_date, company_name, company_phone, company_email, participant_name, participant_phone, participant_email) VALUES(:course_id, :course_date, :company_name, :company_phone, :company_email, :participant_name, :participant_phone, :participant_email)';
 $stmt = $pdo->prepare($sql);
 $stmt->execute([
+                'course_id'     => $courseID,
                 'course_date'   => $courseDate,
                 'company_name'  => $companyName,
                 'company_phone' => $companyPhone,

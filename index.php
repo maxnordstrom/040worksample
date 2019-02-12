@@ -36,7 +36,7 @@
         <div class="select-course">
           <div class="select-name col-md-6">
             <label for="select-name">Name*</label>
-            <select class="form-control" id="course-dropdown" name="course_name"></select>
+            <select class="form-control" id="course-dropdown" name="course_id"></select>
           </div>
           <div class="select-date col-md-6">
             <label for="select-date">Date</label>
