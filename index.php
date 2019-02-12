@@ -17,7 +17,6 @@
   <link rel="stylesheet" href="css/vendor/bootstrap.min.css">
   <link rel="stylesheet" href="css/main.css">
 
-  <?php include('form-script.php'); ?>
 </head>
 
 <body>
@@ -27,12 +26,13 @@
 
   <!-- Add your site or application content here -->
 
+  <iframe name="hiddenFrame" class="hide"></iframe>
 
-<!-- Course section -->
+  <!-- Course section -->
   <section class="course-section">
     <div class="col-md-10 mx-auto">
       <h2>Course</h2>
-      <form method="post" action="form-script.php">
+      <form id="signup-form" method="post" action="form-script.php" target="hiddenFrame">
         <div class="select-course">
           <div class="select-name col-md-6">
             <label for="select-name">Name*</label>
@@ -99,7 +99,7 @@
   <section>
     <div class="col-md-10 mx-auto">
       <div class="btn-submit-application">
-        <button type="submit" class="btn btn-primary col-md-12">Submit application</button>
+        <button id="submit-application" type="submit" class="btn btn-primary col-md-12">Submit application</button>
       </div>
     </div>
   </form>
@@ -115,6 +115,7 @@
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/dropdown.js"></script>
   <script src="js/add-participant.js"></script>
+  <script src="js/clear-form.js"></script>
 
 </body>
 

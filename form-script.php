@@ -13,17 +13,19 @@ $participantName =  $_POST['participant_name'] ?? '';
 $participantPhone = $_POST['participant_phone'] ?? '';
 $participantEmail = $_POST['participant_email'] ?? '';
 
-// $sql = 'INSERT INTO course1(course_date, company_name, company_phone, company_email, participant_name, participant_phone, participant_email) VALUES(:course_date, :company_name, :company_phone, :company_email, :participant_name, :participant_phone, :participant_email)';
-// $stmt = $pdo->prepare($sql);
-// $stmt->execute([
-//                 'course_date'   => $courseDate,
-//                 'company_name'  => $companyName,
-//                 'company_phone' => $companyPhone,
-//                 'company_email' => $companyEmail,
-//                 'participant_name'  => $participantName,
-//                 'participant_phone' => $participantPhone,
-//                 'participant_email' => $participantEmail
-//               ]);
+$sql = 'INSERT INTO course1(course_date, company_name, company_phone, company_email, participant_name, participant_phone, participant_email) VALUES(:course_date, :company_name, :company_phone, :company_email, :participant_name, :participant_phone, :participant_email)';
+$stmt = $pdo->prepare($sql);
+$stmt->execute([
+                'course_date'   => $courseDate,
+                'company_name'  => $companyName,
+                'company_phone' => $companyPhone,
+                'company_email' => $companyEmail,
+                'participant_name'  => $participantName,
+                'participant_phone' => $participantPhone,
+                'participant_email' => $participantEmail
+              ]);
+
+
 
 
 
