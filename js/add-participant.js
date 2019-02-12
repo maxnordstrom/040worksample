@@ -3,7 +3,7 @@ jQuery(document).ready(function() {
   $("#add-participant").click(function() {
 
     let newParticipant = $(
-    `<h4 class="pt-3 participant-header"></h4>
+     `<h4 class="pt-3 participant-header"></h4>
       <div class="d-flex flex-wrap">
         <div class="col-md-12">
           <label for="participant-name">Name*</label>

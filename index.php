@@ -85,9 +85,6 @@
           <label for="participant-email">E-mail*</label>
           <input type="email" class="form-control" id="participant-email" name="participant_email">
         </div>
-        <!-- <div class="btn-add-participant">
-          <button type="button" class="btn btn-primary mt-3 add-participant" id="add-participant">Add a participant</button>
-        </div> -->
       </div>
     </div>
     <div class="btn-add-participant col-md-10 mx-auto">
