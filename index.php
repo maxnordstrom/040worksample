@@ -69,7 +69,7 @@
   <section class="participant-section">
     <div class="col-md-10 mx-auto" id="append-here">
       <h2>Participants</h2>
-      <h4>Participant #1</h4>
+      <h4 class="participant-header" id="participant-number-1">Participant #1</h4>
       <div class="d-flex flex-wrap">
         <div class="col-md-12">
           <label for="company-name">Name*</label>

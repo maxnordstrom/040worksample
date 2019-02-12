@@ -23,19 +23,8 @@ jQuery(document).ready(function() {
     $('#append-here').append(newParticipant);
 
 
-    // let numberOfHeaders = $('.participant-header').length;
-    // numberOfHeaders++;
-    //   // console.log(numberOfHeaders);
-    // function addNewId() {
-    //   let newId = 'participant-number-' + numberOfHeaders;
-    //   $(this).attr('id',newID);
-    //  $(this).val(participantNumber);
-    //   // return newId;
-    //   // console.log(newId);
-    // }
-    // addNewId();
-
-    let participantNumber = 1;
+    // Set unique ID for every new participant header and increment h4 tag
+    let participantNumber = 0;
 
     $('.participant-header').each(function(){
       participantNumber++;
@@ -46,6 +35,6 @@ jQuery(document).ready(function() {
 
     document.getElementById("participant-number-"+participantNumber).innerHTML = "Participant #" + participantNumber;
 
-
   })
+
 });
