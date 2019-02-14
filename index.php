@@ -75,15 +75,15 @@
       <div class="d-flex flex-wrap">
         <div class="col-md-12">
           <label for="participant-name">Name*</label>
-          <input type="text" class="form-control" id="participant-name" name="participant_name">
+          <input type="text" class="form-control" id="participant-name" name="participant_name_1">
         </div>
         <div class="col-md-4">
           <label for="participant-phone">Phone*</label>
-          <input type="number" class="form-control" id="participant-phone" name="participant_phone">
+          <input type="number" class="form-control" id="participant-phone" name="participant_phone_1">
         </div>
         <div class="col-md-8">
           <label for="participant-email">E-mail*</label>
-          <input type="email" class="form-control" id="participant-email" name="participant_email">
+          <input type="email" class="form-control" id="participant-email" name="participant_email_1">
         </div>
         <!-- <div class="btn-add-participant">
           <button type="button" class="btn btn-primary mt-3 add-participant" id="add-participant">Add a participant</button>
