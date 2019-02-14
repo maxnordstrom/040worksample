@@ -7,7 +7,7 @@ The different courses (found in the endpoints folder) are structured as differen
 
 ##Local environment
 
-Set up the form locally using MAMP (or stack of your choice) and put the project folder in your root directory (in my case it's **/htdocs**). Checkout the **.env** file so that it corresponds to your local environemnt.
+Set up the form locally using MAMP (or stack of your choice) and put the project folder in your root directory (in my case it's **/htdocs**). Checkout the **.env** file so that it corresponds to your local environment.
 
 ##
 
