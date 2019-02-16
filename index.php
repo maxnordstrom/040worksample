@@ -18,7 +18,7 @@
 
   <body>
     <iframe name="hiddenFrame" class="hide"></iframe> <!-- ta bort hide och kör echo i form script -->
-    <form id="signup-form" method="post" action="form-script.php" target="hiddenFrame">
+    <form class="needs-validation" id="signup-form" method="post" action="form-script.php" target="" novalidate> <!-- target="hiddenFrame" -->
 
       <!-- Course section -->
       <section class="course-section">
@@ -27,11 +27,17 @@
           <div class="select-course">
             <div class="select-name col-md-6">
               <label for="course-dropdown">Name*</label>
-              <select class="form-control" id="course-dropdown" name="course_id"></select>
+              <select class="form-control" id="course-dropdown" name="course_id" required></select>
+              <div class="invalid-feedback">
+                Please choose a course.
+              </div>
             </div>
             <div class="select-date col-md-6">
               <label for="date-dropdown">Date</label>
-              <select class="form-control" id="date-dropdown" name="course_date"></select>
+              <select class="form-control" id="date-dropdown" name="course_date" required></select>
+              <div class="invalid-feedback">
+                Please choose a date.
+              </div>
             </div>
           </div>
         </div>
@@ -44,15 +50,24 @@
           <div class="d-flex flex-wrap">
             <div class="col-md-12">
               <label for="company-name">Name*</label>
-              <input type="text" class="form-control" id="company-name" name="company_name">
+              <input type="text" class="form-control" id="company-name" name="company_name" required>
+              <div class="invalid-feedback">
+                Please enter company name.
+              </div>
             </div>
             <div class="col-md-4">
               <label for="company-phone">Phone*</label>
-              <input type="number" class="form-control" id="company-phone" name="company_phone">
+              <input type="number" class="form-control" id="company-phone" name="company_phone" required>
+              <div class="invalid-feedback">
+                Please enter company phone.
+              </div>
             </div>
             <div class="col-md-8">
               <label for="company-email">E-mail*</label>
-              <input type="email" class="form-control" id="company-email" name="company_email">
+              <input type="email" class="form-control" id="company-email" name="company_email" required>
+              <div class="invalid-feedback">
+                Please enter company e-mail.
+              </div>
             </div>
           </div>
         </div>
@@ -66,15 +81,24 @@
           <div class="d-flex flex-wrap">
             <div class="col-md-12">
               <label for="participant-name">Name*</label>
-              <input type="text" class="form-control" id="participant-name" name="participant_name_1">
+              <input type="text" class="form-control" id="participant-name" name="participant_name_1" required>
+              <div class="invalid-feedback">
+                Please enter participant name.
+              </div>
             </div>
             <div class="col-md-4">
               <label for="participant-phone">Phone*</label>
-              <input type="number" class="form-control" id="participant-phone" name="participant_phone_1">
+              <input type="number" class="form-control" id="participant-phone" name="participant_phone_1" required>
+              <div class="invalid-feedback">
+                Please enter participant phone.
+              </div>
             </div>
             <div class="col-md-8">
               <label for="participant-email">E-mail*</label>
-              <input type="email" class="form-control" id="participant-email" name="participant_email_1">
+              <input type="email" class="form-control" id="participant-email" name="participant_email_1" required>
+              <div class="invalid-feedback">
+                Please enter participant e-mail.
+              </div>
             </div>
           </div>
         </div>
@@ -102,6 +126,27 @@
     <script src="js/dropdown.js"></script>
     <script src="js/add-participant.js"></script>
     <script src="js/clear-form.js"></script>
+
+    <script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
 
   </body>
 </html>

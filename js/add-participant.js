@@ -7,15 +7,24 @@ jQuery(document).ready(function() {
       <div class="d-flex flex-wrap">
         <div class="col-md-12">
           <label for="participant-name">Name*</label>
-          <input type="text" class="form-control new-participant-name" id="participant-name" name="participant_name">
+          <input type="text" class="form-control new-participant-name" id="participant-name" name="participant_name" required>
+          <div class="invalid-feedback">
+            Please enter participant name.
+          </div>
         </div>
         <div class="col-md-4">
           <label for="participant-phone">Phone*</label>
-          <input type="number" class="form-control new-participant-phone" id="participant-phone" name="participant_phone">
+          <input type="number" class="form-control new-participant-phone" id="participant-phone" name="participant_phone" required>
+          <div class="invalid-feedback">
+            Please enter participant phone.
+          </div>
         </div>
         <div class="col-md-8">
           <label for="participant-email">E-mail*</label>
-          <input type="email" class="form-control new-participant-email" id="participant-email" name="participant_email">
+          <input type="email" class="form-control new-participant-email" id="participant-email" name="participant_email" required>
+          <div class="invalid-feedback">
+            Please enter participant e-mail.
+          </div>
         </div>
       </div>`
     );
