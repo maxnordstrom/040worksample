@@ -3,8 +3,6 @@
 // Bootstrap the database
 include('db.php');
 
-$i = 1;
-
 
 // Get "static" user input
 $courseID =         $_POST['course_id'] ?? '';
@@ -18,7 +16,8 @@ $companyEmail =     $_POST['company_email'] ?? '';
 $tableName = 'course' . $courseID;
 
 
-if ($i == 1) {
+$i = 1;
+while(isset($_POST['participant_name_' . $i])) {
 
 // Get the "dynamic" user input
 $participantName =  $_POST['participant_name_' . $i] ?? '';
