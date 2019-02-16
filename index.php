@@ -28,21 +28,22 @@
 
   <iframe name="hiddenFrame" class="hide"></iframe>
 
+  <form id="signup-form" method="post" action="form-script.php" target="hiddenFrame">
+
   <!-- Course section -->
   <section class="course-section">
     <div class="col-md-10 mx-auto">
       <h2>Course</h2>
-      <form id="signup-form" method="post" action="form-script.php" target="hiddenFrame">
-        <div class="select-course">
-          <div class="select-name col-md-6">
-            <label for="select-name">Name*</label>
-            <select class="form-control" id="course-dropdown" name="course_id"></select>
-          </div>
-          <div class="select-date col-md-6">
-            <label for="select-date">Date</label>
-            <select class="form-control" id="date-dropdown" name="course_date"></select>
-          </div>
+      <div class="select-course">
+        <div class="select-name col-md-6">
+          <label for="select-name">Name*</label>
+          <select class="form-control" id="course-dropdown" name="course_id"></select>
         </div>
+        <div class="select-date col-md-6">
+          <label for="select-date">Date</label>
+          <select class="form-control" id="date-dropdown" name="course_date"></select>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -99,8 +100,9 @@
         <button id="submit-application" type="submit" class="btn btn-primary col-md-12">Submit application</button>
       </div>
     </div>
-  </form>
   </section>
+
+  </form>
 
 
 
