@@ -11,6 +11,8 @@ $companyName =      $_POST['company_name'] ?? '';
 $companyPhone =     $_POST['company_phone'] ?? '';
 $companyEmail =     $_POST['company_email'] ?? '';
 
+// Check that there is no empty value
+
 
 // Change database table depending on courseID
 $tableName = 'course' . $courseID;
@@ -19,10 +21,12 @@ $tableName = 'course' . $courseID;
 $i = 1;
 while(isset($_POST['participant_name_' . $i])) {
 
-// Get the "dynamic" user input
-$participantName =  $_POST['participant_name_' . $i] ?? '';
-$participantPhone = $_POST['participant_phone_' . $i] ?? '';
-$participantEmail = $_POST['participant_email_' . $i] ?? '';
+  // Get the "dynamic" user input
+  $participantName =  $_POST['participant_name_' . $i] ?? '';
+  $participantPhone = $_POST['participant_phone_' . $i] ?? '';
+  $participantEmail = $_POST['participant_email_' . $i] ?? '';
+
+  // Check that value is not empty
 
   // Insert user input to database
   $sql = 'INSERT INTO ' . $tableName . '(course_id, course_date, company_name, company_phone, company_email, participant_name, participant_phone, participant_email) VALUES(:course_id, :course_date, :company_name, :company_phone, :company_email, :participant_name, :participant_phone, :participant_email)';
@@ -40,4 +44,6 @@ $participantEmail = $_POST['participant_email_' . $i] ?? '';
 
   $i++;
 }
+
+// Success or fail message
 
