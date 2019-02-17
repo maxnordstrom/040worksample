@@ -43,5 +43,5 @@ while(isset($_POST['participant_name_' . $i])) {
 
 // Redirect to startpage
 $url='http://localhost:8888/040worksample/';
-echo '<META HTTP-EQUIV=REFRESH CONTENT="4; '.$url.'">';
+echo '<META HTTP-EQUIV=REFRESH CONTENT="3; '.$url.'">';
 
