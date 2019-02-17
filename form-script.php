@@ -41,10 +41,7 @@ while(isset($_POST['participant_name_' . $i])) {
   $i++;
 }
 
-
-// Confirmation message and redirect
-echo "Form successfully submitted! Redirecting to start page.";
-
+// Redirect to startpage
 $url='http://localhost:8888/040worksample/';
 echo '<META HTTP-EQUIV=REFRESH CONTENT="5; '.$url.'">';
 

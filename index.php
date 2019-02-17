@@ -17,8 +17,7 @@
   </head>
 
   <body>
-    <iframe name="hiddenFrame" class="hide"></iframe> <!-- ta bort hide och kör echo i form script -->
-    <form class="needs-validation" id="signup-form" method="post" action="form-script.php" target="" novalidate> <!-- target="hiddenFrame" -->
+    <form class="needs-validation" id="signup-form" method="post" action="confirmation-message.php" novalidate>
 
       <!-- Course section -->
       <section class="course-section">
