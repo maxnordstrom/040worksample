@@ -12,6 +12,21 @@ $companyPhone =     $_POST['company_phone'] ?? false;
 $companyEmail =     $_POST['company_email'] ?? false;
 
 
+// Back-end validation
+$required = array('course_id', 'course_date', 'company_name', 'company_phone', 'company_email');
+
+$error = false;
+foreach($required as $field) {
+  if (empty($_POST[$field]) || $_POST[$field] == '') {
+    $error = true;
+  }
+}
+
+if ($error) {
+  echo "All fields are required.";
+  die();
+}
+
 // Change database table depending on courseID
 $tableName = 'course' . $courseID;
 
@@ -22,6 +37,21 @@ while(isset($_POST['participant_name_' . $i])) {
   $participantName =  $_POST['participant_name_' . $i] ?? false;
   $participantPhone = $_POST['participant_phone_' . $i] ?? false;
   $participantEmail = $_POST['participant_email_' . $i] ?? false;
+
+  // Back-end validation of "dynamic" user input
+  $requiredDynamic = array('participant_name_' . $i, 'participant_phone_' . $i, 'participant_email_' . $i);
+
+  $error = false;
+  foreach($requiredDynamic as $field) {
+    if (empty($_POST[$field]) || $_POST[$field] == '') {
+      $error = true;
+    }
+  }
+
+  if ($error) {
+    echo "All fields are required.";
+    die();
+  }
 
 
   // Insert user input to database
